@@ -1,0 +1,11 @@
+
+©
+java:S11929"“Define a constant instead of duplicating this literal "ÐžÑˆÐ¸Ð±ÐºÐ°: Ð Ð°Ð·Ð¼ÐµÑ€Ñ‹ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ† Ð´Ð¾Ð»Ð¶Ð½Ñ‹ Ð±Ñ‹Ñ‚ÑŒ Ð¾Ð´Ð¸Ð½Ð°ÐºÐ¾Ð²Ñ‹" 3 times.(ÏÀûu
++
+java:S1700"Rename field "matrix"(Ñ¹Â¤
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ô­ÈÍ
+Q	java:S125"<This block of commented-out lines of code should be removed.(½úÅÇ
+P
+java:S1117":Rename "matrix" which hides the field declared at line 19.(šœî
+S	java:S106,"9Replace this use of System.out or System.err by a logger.(ä¼Ãœþÿÿÿÿ
+S	java:S106."9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ
