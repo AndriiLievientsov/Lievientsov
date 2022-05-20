@@ -47,9 +47,3 @@ k
 ;src/main/java/ua/ithillel/nichushkin/FourClasses/Main3.java,8\b\8b8bafcad328496a8ab87c804b72adc40c46e3f7
 k
 ;src/main/java/ua/ithillel/nichushkin/FourClasses/Main2.java,f\c\fc20a58eb9db623f00a21666c6fd60d90987ba3d
-l
-<src/main/java/ua/ithillel/nichushkin/FourClasses/Matrix.java,2\8\28d7e30ad622bca29d8220fc4e2ab3ad4761b9e2
-j
-:src/main/java/ua/ithillel/nichushkin/FourClasses/Cat1.java,4\4\4419d4b9e7dc329632da362dc72da80b59494930
-k
-;src/main/java/ua/ithillel/nichushkin/FourClasses/Main1.java,3\b\3bee1c2e28a5b043f69b4833dc32e1ccae278c17
