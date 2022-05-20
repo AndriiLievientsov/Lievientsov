@@ -20,11 +20,11 @@ package ua.ithillel.chernovol.four.ClassesPartThree;
 //        Энциклопедия". Или "Петров В. В. вернул 3 книги".
 
 public class Reader {
-    String fullName;
-    int id;
-    String faculty;
-    String birthDay;
-    String phone;
+    private String fullName;
+    private int id;
+    private String faculty;
+    private String birthDay;
+    private String phone;
 
     public static void main(String[] args) {
         Reader firstReader = new Reader("Иванов Иван",1,"Экономика",
