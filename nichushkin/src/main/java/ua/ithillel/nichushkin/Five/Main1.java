@@ -1,4 +1,4 @@
-package ua.ithillel.nichushkin.Third;
+package ua.ithillel.nichushkin.Five;
 //### Часть 1:
 //
 //        Создайте класс с именем `Fraction`, содержащий два поля типа `int` - `numerator`(числитель) и
@@ -19,15 +19,28 @@ package ua.ithillel.nichushkin.Third;
 
 public class Main1 {
     public static void main(String[] args) {
+        double randomDouble = 0.75;
+
         Fraction fraction1 = new Fraction(29, 30);
         Fraction fraction2 = new Fraction(44, 45);
-        fraction2.addition(fraction1);
-        System.out.println(fraction2.addition(fraction1).toString());
-        Fraction fraction3 = new Fraction(4, 6);
-        Fraction fraction4 = new Fraction(2, 4);
-        System.out.println(fraction4.addition(fraction3));
-        Fraction fraction5 = new Fraction(6000, 60000);
-        Fraction fraction6 = new Fraction(9000, 90000);
-        System.out.println(fraction6.addition(fraction5));
+        System.out.println("Результат метода `addition`");
+        Fraction fractionAdd = fraction2.addition(fraction1);
+        System.out.println(fractionAdd);
+        System.out.println("Результат метода `multiply`");
+        Fraction fractionMultiplyValue = fraction1.multiply(randomDouble);
+        System.out.println(randomDouble);
+        System.out.println(fractionMultiplyValue);
+        System.out.println("Результат метода `division`");
+        Fraction fractionDividion = fraction1.division(randomDouble);
+        System.out.println(fractionDividion);
+
+
+//        System.out.println(fraction2.addition(fraction1).toString());
+//        Fraction fraction3 = new Fraction(4, 6);
+//        Fraction fraction4 = new Fraction(2, 4);
+//        System.out.println(fraction4.addition(fraction3));
+//        Fraction fraction5 = new Fraction(6000, 60000);
+//        Fraction fraction6 = new Fraction(9000, 90000);
+//        System.out.println(fraction6.addition(fraction5));
     }
 }

@@ -1,4 +1,4 @@
-package ua.ithillel.nichushkin.Third;
+package ua.ithillel.nichushkin.Five;
 //### Часть 3:
 //
 //        Создайте `superclass` `Shape` и его наследников `Circle`, `Rectangle`. Класс Shape содержит абстрактный

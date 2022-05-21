@@ -1,4 +1,5 @@
-package ua.ithillel.nichushkin.Third;
+package ua.ithillel.nichushkin.Five;
+
 //### Часть 2:
 //
 //        Создать классы - `User` и `UserFactory`:
@@ -25,6 +26,7 @@ package ua.ithillel.nichushkin.Third;
 //        Создать пользователя, использовав статический метод `createUser` класса `UserFactory`.
 public class Main2 {
     public static void main(String[] args) {
+        User user1 = new User();
 
     }
 }
