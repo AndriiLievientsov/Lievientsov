@@ -20,13 +20,18 @@ package ua.ithillel.nichushkin.Five;
 //        - статическое поле `nextId` типа `int` (Только статическое! `final` делать не нужно).
 //        - метод `createUser`, который будет создавать и возвращать объект класса `User`.
 //
-//        Для значения поля `id` (для передачи в конструктор) в классе `User` использовать значение статического поля в классе `UserFactory`.
+//        Для значения поля `id` (для передачи в конструктор) в классе `User` использовать значение статического поля
+//        в классе `UserFactory`.
 //        После каждого создания объекта класса `User` значение поля `nextId` должно быть увеличено на **1**.
 //
 //        Создать пользователя, использовав статический метод `createUser` класса `UserFactory`.
 public class Main2 {
     public static void main(String[] args) {
-        User user1 = new User();
-
+        User user1 = new UserFactory().createUser(22,"Petr", "Petruhov", "Dnipro");
+        System.out.println(user1.toString());
+        User user2 = new UserFactory().createUser(23,"Petr1", "Petruhov1", "Dnipro1");
+        System.out.println(user2.toString());
+        User user3 = new UserFactory().createUser(24,"Petr2", "Petruhov2", "Dnipro2");
+        System.out.println(user3.toString());
     }
 }

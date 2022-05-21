@@ -9,16 +9,20 @@ package ua.ithillel.nichushkin.Five;
 //        После каждого создания объекта класса `User` значение поля `nextId` должно быть увеличено на **1**.
 //
 //        Создать пользователя, использовав статический метод `createUser` класса `UserFactory`.
-public class UserFactory extends User {
+public class UserFactory {
     private static int nextId;
+
+    public void setNextId(int nextId) {
+        UserFactory.nextId = nextId;
+    }
 
     public static int getNextId() {
         return nextId;
     }
 
-    public void createUser() {
+    public User createUser(int age, String firstName, String lastName, String city) {
+        setNextId(getNextId() + 1);
+        return new User(age, firstName, lastName, city);
     }
 
-    public void printUser(){
-    }
 }

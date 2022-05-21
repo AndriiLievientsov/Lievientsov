@@ -21,8 +21,9 @@ public class User {
     private String lastName;
     private String city;
 
-    public User(int id, int age, String firstName, String lastName, String city) {
-        this.id = id;
+
+    public User(int age, String firstName, String lastName, String city) {
+        this.id = UserFactory.getNextId();
         this.age = age;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -63,5 +64,16 @@ public class User {
 
     public void setCity(String city) {
         this.city = city;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", age=" + age +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", city='" + city + '\'' +
+                '}';
     }
 }
