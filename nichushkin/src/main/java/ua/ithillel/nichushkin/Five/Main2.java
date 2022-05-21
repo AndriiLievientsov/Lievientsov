@@ -27,11 +27,11 @@ package ua.ithillel.nichushkin.Five;
 //        Создать пользователя, использовав статический метод `createUser` класса `UserFactory`.
 public class Main2 {
     public static void main(String[] args) {
-        User user1 = new UserFactory().createUser(22,"Petr", "Petruhov", "Dnipro");
+        User user1 = new UserFactory().createUser(22, "Petr", "Petruhov", "Dnipro");
         System.out.println(user1.toString());
-        User user2 = new UserFactory().createUser(23,"Petr1", "Petruhov1", "Dnipro1");
+        User user2 = new UserFactory().createUser(23, "Petr1", "Petruhov1", "Dnipro1");
         System.out.println(user2.toString());
-        User user3 = new UserFactory().createUser(24,"Petr2", "Petruhov2", "Dnipro2");
+        User user3 = new UserFactory().createUser(24, "Petr2", "Petruhov2", "Dnipro2");
         System.out.println(user3.toString());
     }
 }
