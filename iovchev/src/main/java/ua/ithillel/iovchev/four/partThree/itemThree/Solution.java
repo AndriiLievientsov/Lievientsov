@@ -11,9 +11,14 @@ package ua.ithillel.iovchev.four.partThree.itemThree;
 
 public class Solution {
     public static void main(String[] args) {
-        Matrix matrix = new Matrix();
-        matrix.sumArrays(new double[][]{{1, 2, 3}, {4, 5, 6}}, new double[][]{{1, 2, 3}, {4, 5, 6}});
-        matrix.multiplyArrayNumber(new double[][]{{1, 2, 3}, {4, 5, 6}}, 5.0);
-        matrix.multiplyArrays(new double[][]{{1, 2, 3}, {4, 5, 6}}, new double[][]{{1, 2, 3}, {4, 5, 6},{7,8,9}});
+        double[][] array1 = new double[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+        double[][] array2 = new double[][]{{1, 2, 3}, {4, 5, 6}, {4, 5, 6}};
+
+        Matrix matrix1 = new Matrix(array1, array1.length, array1[0].length);
+        Matrix matrix2 = new Matrix(array2, array2.length, array2[0].length);
+
+        matrix1.sumArrays(matrix2);
+        matrix1.multiplyArrayNumber(5.0);
+        matrix1.multiplyArrays(matrix2);
     }
 }
