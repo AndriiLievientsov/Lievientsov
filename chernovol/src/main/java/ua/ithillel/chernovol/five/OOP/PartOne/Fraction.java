@@ -1,4 +1,5 @@
 package ua.ithillel.chernovol.five.OOP.PartOne;
+
 /**
  * @author Chernovol Alexander
  */
@@ -10,6 +11,7 @@ public class Fraction {
         this.numerator = numerator;
         this.denumerator = denumerator;
     }
+
     //Метод сложения дробей
     public Fraction addition(Fraction fraction) {
 
@@ -35,6 +37,7 @@ public class Fraction {
         }
         return fr;
     }
+
     //Метод сокращения дроби
     public Fraction cutFraction() {
         int commonDivisor = (this.numerator > this.denumerator) ? this.numerator : this.denumerator;
@@ -49,16 +52,18 @@ public class Fraction {
         }
         return this;
     }
+
     //Метод умножения дроби на число
-    public Fraction multiplay(double value){
-        Fraction fr = new Fraction(0,0);
+    public Fraction multiplay(double value) {
+        Fraction fr = new Fraction(0, 0);
         fr.numerator = (int) (this.numerator * value);
         fr.denumerator = this.denumerator;
         return fr;
     }
+
     //Метод деления дроби на число
-    public Fraction division(double value){
-        Fraction fr = new Fraction(0,0);
+    public Fraction division(double value) {
+        Fraction fr = new Fraction(0, 0);
         fr.numerator = (int) (this.numerator / value);
         fr.denumerator = this.denumerator;
         return fr;
