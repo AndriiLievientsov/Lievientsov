@@ -52,7 +52,7 @@ public class Main {
         m1.matrixRandom();
         m1.matrixPrint();
         System.out.println("+ matrix");
-        m.matrixSum(m,m1);
+        m.matrixSum(m1);
         m.matrixPrint();
         System.out.println("matrix * value");
         m.matrixValue(m1, 2);
