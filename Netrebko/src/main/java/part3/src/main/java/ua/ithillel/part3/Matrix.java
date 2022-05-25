@@ -42,10 +42,10 @@ public class Matrix {
         }
     }
 
-    public int[][] matrixSum(Matrix array1, Matrix array2) {
+    public int[][] matrixSum(Matrix array2) {
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
-                matrix[i][j] = array1.matrix[i][j] + array2.matrix[i][j];
+                matrix[i][j] = matrix[i][j] + array2.matrix[i][j];
             }
         }
         return matrix;
