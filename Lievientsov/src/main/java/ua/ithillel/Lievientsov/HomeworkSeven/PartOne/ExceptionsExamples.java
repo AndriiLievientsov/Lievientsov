@@ -58,9 +58,9 @@ public class ExceptionsExamples {
             System.out.println("Exception: " + g + "\n" + "=============");
         }
         //7
-        String CLASS_TO_LOAD = "main.java.Utils";
+        String ClassToLoad = "main.java.Utils";
         try {
-            Class loadedClass = Class.forName(CLASS_TO_LOAD);
+            Class loadedClass = Class.forName(ClassToLoad);
             System.out.println("Class " + loadedClass + " found!");
         } catch (ClassNotFoundException h) {
             System.out.println("Exception 7");
