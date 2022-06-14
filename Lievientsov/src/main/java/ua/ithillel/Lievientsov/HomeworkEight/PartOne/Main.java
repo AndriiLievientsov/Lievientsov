@@ -96,5 +96,6 @@ public class Main {
         System.out.println("=====================");
         myMap2.clear();
         System.out.println("Map after removing all the elements - " + myMap2);
+
     }
 }
