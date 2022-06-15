@@ -30,15 +30,18 @@ public class ListTwo {
         System.out.println("List without duplicates: " +
                 removeDuplicates(list1) +
                 "\n=========================");
-        List<String> list2 = new ArrayList<>();
-        list2.add("Hello");
-        list2.add("World");
-
-        for (Map.Entry<?, Integer> e : countValues(list2).entrySet()) {
-            System.out.println(e);
-        }
+        String[] seasons = new String[8];
+        seasons[0] = "Winter";
+        seasons[1] = "Spring";
+        seasons[2] = "Summer";
+        seasons[3] = "Autumn";
+        seasons[4] = "Winter";
+        seasons[5] = "Autumn";
+        seasons[6] = "Summer";
+        seasons[7] = "Autumn";
+        Map<String, Integer> nameCounter = countValues(seasons);
+        System.out.println("Number of occurrences in the array: " + nameCounter);
         System.out.println("=========================");
-
         compare2Lists();
     }
 
@@ -73,11 +76,10 @@ public class ListTwo {
     }
 
     //Метод вхождения в массив
-    public static <K> Map<K, Integer> countValues(Collection<K> collection) {
+    public static <K> Map<K, Integer> countValues(K[] ks) {
         Map<K, Integer> someMap = new HashMap<>();
-        int i = 0;
-        for (K e : collection) {
-            someMap.put(e, i++);
+        for (K k : ks) {
+            someMap.compute(k, (k1, count) -> count == null ? 1 : count + 1);
         }
         return someMap;
     }
