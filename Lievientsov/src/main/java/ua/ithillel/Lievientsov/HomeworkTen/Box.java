@@ -9,6 +9,7 @@ public class Box implements Interface {
     public void print() {
 
     }
+
     @AnnotationOne
     public Box() {
 
@@ -56,6 +57,7 @@ public class Box implements Interface {
         Content(String name) {
             this.name = name;
         }
+
         public void displayContent() {
             System.out.printf("Content" + name);
         }
