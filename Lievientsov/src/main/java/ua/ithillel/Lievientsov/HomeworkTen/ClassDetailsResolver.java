@@ -71,7 +71,7 @@ public class ClassDetailsResolver {
         System.out.println("Inner class:");
         Arrays.stream(boxClass.getDeclaredClasses()).forEach(System.out::println);
         System.out.println();
-        //Показать имя родителя
+        //Показать имя родителя.
         System.out.println("Show parents:");
         Class<?> childClass = secondBox.getSuperclass();
         System.out.println(childClass + "\n");
