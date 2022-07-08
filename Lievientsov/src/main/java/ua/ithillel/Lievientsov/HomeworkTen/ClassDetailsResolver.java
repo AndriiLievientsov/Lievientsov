@@ -25,6 +25,11 @@ public class ClassDetailsResolver {
     public static void main(String[] args) throws ClassNotFoundException {
         Class<Box> boxClass = Box.class;
         Class<BoxDescription> secondBox = BoxDescription.class;
+        System.out.println(resolve(boxClass, secondBox));
+    }
+
+    public static String resolve(Class boxClass, Class secondBox) {
+        StringBuilder boxInfo = new StringBuilder();
         System.out.println("======= Class Details=======");
         System.out.println("Package:\n" + boxClass.getPackage() + "\n");
         System.out.println("Class:\n" + boxClass + "\n" + "\n" + "Fields:");
@@ -81,5 +86,7 @@ public class ClassDetailsResolver {
                 System.out.println("Constructor have annotation: " + annotation);
             }
         }
+        return boxInfo.toString();
     }
+
 }
