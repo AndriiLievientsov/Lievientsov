@@ -25,7 +25,13 @@ public class ClassDetailsResolver {
     public static void main(String[] args) throws ClassNotFoundException {
         Class<Box> boxClass = Box.class;
         Class<BoxDescription> secondBox = BoxDescription.class;
+        System.out.println(resolve(boxClass, secondBox));
+    }
+
+    public static String resolve(Class boxClass, Class secondBox) {
+        StringBuilder boxInfo = new StringBuilder();
         System.out.println("======= Class Details=======");
+        //получаю пакет
         System.out.println("Package:\n" + boxClass.getPackage() + "\n");
         System.out.println("Class:\n" + boxClass + "\n" + "\n" + "Fields:");
         //получаю перечень полей
@@ -65,7 +71,7 @@ public class ClassDetailsResolver {
         System.out.println("Inner class:");
         Arrays.stream(boxClass.getDeclaredClasses()).forEach(System.out::println);
         System.out.println();
-        //Показать имя родителя
+        //Показать имя родителя.
         System.out.println("Show parents:");
         Class<?> childClass = secondBox.getSuperclass();
         System.out.println(childClass + "\n");
@@ -81,5 +87,6 @@ public class ClassDetailsResolver {
                 System.out.println("Constructor have annotation: " + annotation);
             }
         }
+        return boxInfo.toString();
     }
 }
