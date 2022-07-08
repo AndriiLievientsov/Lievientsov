@@ -6,9 +6,7 @@ import java.util.Arrays;
 
 /*
 * Создать класс `ClassDetailsResolver`.
-
 В этом классе создать метод `resolve`, который принимает один аргумент типа `Class`и возвращает `String`.
-
 Этот метод должен собрать всю информацию о классе:
 -  Список полей
 -  Список конструкторов
@@ -20,7 +18,6 @@ import java.util.Arrays;
 -  Показать какие интерфейсы имплементирует класс.
 -  Показать какие аннотации есть у класса.
 * */
-
 public class ClassDetailsResolver {
     public static void main(String[] args) throws ClassNotFoundException {
         Class<Box> boxClass = Box.class;
