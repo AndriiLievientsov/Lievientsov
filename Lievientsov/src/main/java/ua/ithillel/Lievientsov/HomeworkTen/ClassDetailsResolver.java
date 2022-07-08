@@ -31,6 +31,7 @@ public class ClassDetailsResolver {
     public static String resolve(Class boxClass, Class secondBox) {
         StringBuilder boxInfo = new StringBuilder();
         System.out.println("======= Class Details=======");
+        //получаю пакет
         System.out.println("Package:\n" + boxClass.getPackage() + "\n");
         System.out.println("Class:\n" + boxClass + "\n" + "\n" + "Fields:");
         //получаю перечень полей
